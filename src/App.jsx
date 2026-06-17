@@ -5,14 +5,16 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import './index.css'
 import Home from './pages/Home'
-import {Routes,Route} from 'react-router-dom';
+import Cart from './pages/Cart'
+import {Routes,Route, NavLink} from 'react-router-dom';
+
 
 function App() {
    return (
     <>
-     <Home/>
      <Routes>
       <Route path="/" element={<Home/>}></Route>
+      <Route path="/cart" element={<Cart/>}></Route>
      </Routes>
     </>
   )
